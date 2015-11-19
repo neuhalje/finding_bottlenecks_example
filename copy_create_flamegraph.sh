@@ -146,5 +146,6 @@ fi
 
 build
 run $*
-verify $*
+# no verify -- the process is killed after sampling
+# verify $*
 
