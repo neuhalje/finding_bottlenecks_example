@@ -108,7 +108,8 @@ function run() {
         local dst="$3"
         local svg="$4"
 
-        java -jar ./build/libs/synthetic-io-emulator-1.0.1-all.jar \
+        # -XX:+PreserveFramePointer is needed, else the code does a terrible job finding the function names for the flamechart
+        java -XX:+PreserveFramePointer  -jar ./build/libs/synthetic-io-emulator-1.0.1-all.jar \
            "$mode" \
            "$src" "$dst" &
 
