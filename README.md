@@ -3,10 +3,10 @@ About
 
 This repository serves two purposes:
 - Demonstrate the impact of buffering on write performance (the more or less synthetic problem at hand)
-- Demonstrate how to measure system resource usage to *pinpoint the bottleneck*
--- Simple but effective methods like  (USE)[http://TODO] (Utilisation, Saturation, Errors).
--- More advanced tools like (flame graphs)[https://github.com/brendangregg/FlameGraph].
--- [SystemTap](https://www.sourceware.org/systemtap) to analyse system calls.
+- Demonstrate how to measure system resource usage to *pinpoint the bottleneck* with
+-- simple but effective methods like  [USE](http://www.brendangregg.com/usemethod.html) (Utilisation, Saturation, Errors).
+-- more advanced tools like [flame graphs](https://github.com/brendangregg/FlameGraph).
+-- kernel level tracing like [SystemTap](https://www.sourceware.org/systemtap) to analyse system calls.
 
 Modes to copy
 ==============
