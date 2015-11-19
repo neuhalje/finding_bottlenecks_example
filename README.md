@@ -52,3 +52,9 @@ __ Task: fill this out yourself __
 | No output buffering    |  50 MB             |          |           |              |                      |              |            |
 | 8 KiB output buffering |  50 MB             |          |           |              |                      |              |            |
 | 8 KiB blocks           |  50 MB             |          |           |              |                      |              |            |
+
+
+LICENSE
+-----------
+
+[WTFPL](http://www.wtfpl.net/about/)
