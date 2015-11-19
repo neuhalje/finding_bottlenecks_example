@@ -1,0 +1,35 @@
+plugins {
+  id 'java'
+  id 'com.github.johnrengelman.shadow' version '1.2.2'
+}
+
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
+
+version = '1.0.1'
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'IO Performance Analysis Examples',
+                   'Implementation-Version': version,
+                   'Main-Class': 'name.neuhalfen.examples.performance.copy.Main'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.12'
+    compile 'ch.qos.logback:logback-classic:1.1.3'
+
+
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.hamcrest:hamcrest-all:1.3'
+
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.7'
+}
