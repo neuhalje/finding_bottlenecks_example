@@ -82,8 +82,6 @@ create_java_maps() {
 			# make $user the username if it is a UID:
 			if [[ "$user" == [0-9]* ]]; then user=$(awk -F: '$3 == '$user' { print $1 }' /etc/passwd); fi
 			cmd="su - $user -c '$cmd'"
-                else
-                        $cmd
 		fi
 		echo "Mapping PID $pid (user $user):"
 		time eval $cmd
