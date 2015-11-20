@@ -42,6 +42,11 @@ SystemTap scripts
 
 This is not quite scope of the demo. Visit [this page](https://sourceware.org/systemtap/getinvolved.html) for installation and the [beginners guide](https://www.sourceware.org/systemtap/SystemTap_Beginners_Guide) for first steps.
 
+Debug Symbols
+--------------
+
+Install the java debug symbols on Fedora: `dnf install --enablerepo=fedora-debuginfo java-1.8.0-openjdk-debuginfo`.
+
 Performance Results
 ===================
 
