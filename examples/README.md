@@ -24,4 +24,4 @@ This chart had been recorded in _blocks_ mode.  Data is not written into a buffe
 
 The most prominet feature of this chart is: It looks a bit like the _unbuffered_ chart. But performance wise this implemantaion is magnitudes faster than the unbuffered versions.
 
-Closer examination shows that roughly 60% of the stacks show that the CPU is idling (`default_idle` on the right side in the middle of the stack).
+Closer examination shows that roughly 60% of the stacks show that the CPU is idling (`default_idle` on the right side in the middle of the stack).  In other words: in contrast to the unbuffered variant we are not CPU bound.
